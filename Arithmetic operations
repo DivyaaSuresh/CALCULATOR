@@ -1,0 +1,18 @@
+ echo -n "Enter the two numbers : 
+" 
+read a b 
+echo " 1. Addition" echo " 2. Subtraction" 
+echo " 3. Multiplication" echo " 4. Division" 
+echo " 5. Modulo Division" echo -n "Enter the option : " read option 
+case $option in 
+1) 
+2) 
+3) 
+4) 
+5) 
+c=`expr $a + $b` echo "$a + $b = $c";; 
+c=`expr $a - $b` echo "$a - $b = $c";; 
+c=`expr $a \* $b` echo "$a * $b = $c";; 
+c=`expr $a / $b` echo "$a / $b = $c";; 
+c=`expr $a % $b` echo "$a % $b = $c";; 
+*) echo "Invalid Option" esac
